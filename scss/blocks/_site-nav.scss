@@ -19,23 +19,21 @@
    font-size: 18px;
    line-height: 21px;
    color: #FFFFFF;
+   transition: color 0.3s ease;
  }
 
- .header-main__social-networks {
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
+ .nav__link:hover {
+   color: $yellow--darker;
  }
 
- .social-network {
-   flex-shrink: 0;
- }
-
- .social-network+.social-network {
-   margin-left: 13px;
+ .nav__link:active {
+   opacity: 0.6;
  }
 
  @include breakpoint-down(900px) {
+   .site-header--open .site-nav {
+     display: block;
+   }
 
    .site-nav {
      position: absolute;
@@ -47,6 +45,7 @@
      margin: 0;
      padding-top: 70px;
      background-color: $main-blue;
+     display: none;
    }
 
    .nav__list {
