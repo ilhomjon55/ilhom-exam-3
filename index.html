@@ -17,7 +17,7 @@
       <h2 class="visually-hidden">Header top section</h2>
       <div class="container">
         <a class="header-top__contact" href="tel:+7(342)216-22-27">
-          <img class="contact__img" src="img/icon-phone.png" src="img/icon-phone.png 1x,img/icon-phone@2x.png 2x "
+          <img class="contact__img" src="img/icon-phone.png" srcset="img/icon-phone.png 1x,img/icon-phone@2x.png 2x "
             alt="Icon phone" width="29" height="29">
           <span class="contact__right-box">
             <span class="contact__text">Contact us</span>
@@ -29,7 +29,7 @@
             height="56">
         </a>
         <div class="header-top__time">
-          <img class="time__img" src="img/icon-clock.png" src="img/icon-clock.png 1x,img/icon-clock@2x.png 2x "
+          <img class="time__img" src="img/icon-clock.png" srcset="img/icon-clock.png 1x,img/icon-clock@2x.png 2x "
             alt="Icon clock" width="29" height="29">
           <span class="time__right-box">
             <span class="time__text">Open now</span>
@@ -83,59 +83,85 @@
   <!--  ===== SITE-CONTENT =====  -->
   <main class="site-content">
     <!-- HERO-SECTION -->
-    <section class="hero">
-      <h2 class="visually-hidden">Section with slider which recommends best sevices</h2>
-      <div class="slider__wrapper">
-        <ul class="hero__slider-track">
-          <li class="slider slider-track__item">
-            <div class="container">
-              <p class="slider__description">Modern technology and expert-class dentists</p>
-              <h3 class="slider__heading">get a brilliant smile for every day</h3>
-              <a class="slider__button" href="better-smile.html">get</a>
-              <div class="slider__controllers">
-                <button class="slider__controller" type="button" aria-label="Click to previous slide"></button>
-                <button class="slider__controller" type="button" aria-label="Click to next slide"></button>
-              </div><!-- slider__controllers -->
-            </div><!-- container -->
-          </li>
+
+    <!-- HERO-BOTTOM -->
+    <div class="hero__bottom">
+      <div class="container">
+        <ul class="hero-bottom__list">
+          <li class="hero__treatment">
+            <h4 class="treatment__heading">Treatment</h4>
+            <p class="treatment__paragraph">
+              All types of dental treatment are carried out using the most modern technologies.
+            </p>
+          </li><!-- hero__treatment -->
+          <li class="hero__prosthetics">
+            <h4 class="prosthetics__heading">Prosthetics</h4>
+            <p class="prosthetics__paragraph">
+              We will help you find the most convenient and aesthetically attractive version of the prosthesis.
+            </p>
+          </li><!-- hero__prosthetics -->
         </ul>
-        <!-- HERO-BOTTOM -->
-        <div class="hero__bottom">
-          <div class="container">
-            <ul class="hero-bottom__list">
-              <li class="hero__treatment">
-                <h4 class="treatment__heading">Treatment</h4>
-                <p class="treatment__paragraph">
-                  All types of dental treatment are carried out using the most modern technologies.
-                </p>
-              </li><!-- hero__treatment -->
-              <li class="hero__prosthetics">
-                <h4 class="prosthetics__heading">Prosthetics</h4>
-                <p class="prosthetics__paragraph">
-                  We will help you find the most convenient and aesthetically attractive version of the prosthesis.
-                </p>
-              </li><!-- hero__prosthetics -->
-            </ul>
-            <form class="hero__form" action="https://echo.htmlacademy.ru/" method="POST">
-              <h4 class="hero-form__heading">Appointment</h4>
-              <input class="hero-form__input" type="text" name="user_name" placeholder="Name"
-                aria-label="Enter your name" required>
-              <input class="hero-form__input" type="tel" name="user_email" placeholder="Phone"
-                aria-label="Enter your email" required>
-              <button class="hero-form__button" type="submit">Appointment</button>
-              <div class="hero-form__bottom">
-                <span class="hero-form__description">
-                  I give my consent to the storage and processing of personal data
-                </span>
-                <label class="hero-form__checkbox-label">
-                  <input class="hero-form__checkbox visually-hidden" type="checkbox" aria-label="Accept or no"
-                    name="user_choice">
-                  <span class="control-checkbox"></span>
-                </label>
-              </div><!-- hero-form__bottom -->
-            </form>
-          </div><!-- container -->
-        </div><!-- hero__bottom -->
+        <form class="hero__form" action="https://echo.htmlacademy.ru/" method="POST">
+          <h4 class="hero-form__heading">Appointment</h4>
+          <input class="hero-form__input" type="text" name="user_name" placeholder="Name" aria-label="Enter your name"
+            required>
+          <input class="hero-form__input" type="tel" name="user_email" placeholder="Phone" aria-label="Enter your email"
+            required>
+          <button class="hero-form__button" type="submit">Appointment</button>
+          <div class="hero-form__bottom">
+            <span class="hero-form__description">
+              I give my consent to the storage and processing of personal data
+            </span>
+            <label class="hero-form__checkbox-label">
+              <input class="hero-form__checkbox visually-hidden" type="checkbox" aria-label="Accept or no"
+                name="user_choice">
+              <span class="control-checkbox"></span>
+            </label>
+          </div><!-- hero-form__bottom -->
+        </form>
+      </div><!-- container -->
+    </div><!-- hero__bottom -->
+    </section>
+    <!-- SERVICES -->
+    <section class="services">
+      <div class="container">
+        <h2 class="services__heading">Services</h2>
+        <p class="services__paragraph">
+          We provide a wide range of services from treatment to prosthetics.
+          Therefore, you do not need to go anywhere else.
+        </p>
+        <div class="services__slider-wrapper">
+          <ul class="services__slider-list">
+            <li class="service service-1 services__slider-item">
+              <h3 class="service__heading">Dental treatment</h3>
+              <s class="price--old">5000₽</s>
+              <ins class="price--new">3100₽</ins>
+            </li>
+            <li class="service service-2 services__slider-item">
+              <h3 class="service__heading">Hygiene</h3>
+              <s class="price--old">6000₽</s>
+              <ins class="price--new">4600₽</ins>
+            </li>
+            <li class="service service-3 services__slider-item">
+              <h3 class="service__heading">Diagnostics</h3>
+              <s class="price--old">1000₽</s>
+              <ins class="price--new">FREE</ins>
+            </li>
+            <li class="service service-4 services__slider-item">
+              <h3 class="service__heading">Children’s dentistry</h3>
+              <s class="price--old">5000₽</s>
+              <ins class="price--new">3100₽</ins>
+            </li>
+            <li class="service service-4 services__slider-item">
+              <h3 class="service__heading">Children’s dentistry</h3>
+              <s class="price--old">5000₽</s>
+              <ins class="price--new">3100₽</ins>
+            </li>
+          </ul>
+          <button class="services__slider-controller" aria-label="previuos-slide"></button>
+          <button class="services__slider-controller" aria-label="next-slide"></button>
+        </div><!-- services__slider-wrapper -->
+      </div><!-- container -->
     </section>
   </main>
   <script src="js/main.js"> </script>
