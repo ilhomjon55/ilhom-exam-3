@@ -222,4 +222,46 @@
     background-color: $main-blue;
   }
 
+  // NOJS
+  .nojs {
+    margin-top: 0;
+  }
+
+  .nojs .site-content {
+    margin-top: 100px;
+  }
+
+  .nojs .site-header {
+    position: static;
+  }
+
+  .nojs .site-header__main {
+    position: static;
+  }
+
+  .nojs .site-nav {
+    position: relative;
+
+  }
+
+  .nojs .site-header .container {
+    flex-direction: column;
+  }
+
+  .nojs .hamburger {
+    display: none;
+  }
+
+  .nojs .header-main__social-networks {
+    position: static;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .nojs .hero__bottom .container {
+    padding-top: 0px;
+  }
 }

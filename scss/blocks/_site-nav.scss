@@ -82,4 +82,14 @@
    .nav__item--active .nav__link {
      color: $main-blue;
    }
+
+   .nojs .site-nav {
+     position: static;
+     width: 100%;
+     height: auto;
+     display: block;
+     margin: 0;
+     padding: 0;
+   }
+
  }
