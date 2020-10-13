@@ -1,0 +1,131 @@
+.technology .container--wide {
+  display: flex;
+
+  align-items: center;
+  max-width: 1640px;
+
+
+}
+
+.technology__img {
+  flex-shrink: 0;
+  margin-right: 110px;
+}
+
+.technology__info {
+  max-width: 800px;
+  background-repeat: no-repeat;
+  background-position: left top 5%;
+  background-image: url("../img/service-back.png");
+}
+
+.technology__heading {
+  position: relative;
+  max-width: 390px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-top: 24px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: $text-color--darker;
+}
+
+.technology__heading::before {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 50px;
+  height: 2px;
+  background-color: #FFD600;
+  content: "";
+}
+
+.technology__paragraph {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+}
+
+.technology__list {
+  @include reset-list;
+}
+
+.technology__item {
+  display: flex;
+  align-items: center;
+}
+
+.technology__item::before {
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: 33px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.technology__item--1::before {
+  background-image: url("../img/tech-1.png");
+}
+
+.technology__item--2::before {
+  background-image: url("../img/tech-2.png");
+}
+
+.technology__item--3::before {
+  background-image: url("../img/tech-3.png");
+}
+
+.tech__name {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #222222;
+}
+
+.tech__description {
+
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color--lighter;
+}
+
+@include breakpoint-down(1300px) {
+  .technology__img {
+    margin-right: 18px;
+
+  }
+}
+
+@include breakpoint-up(1300px) {
+  .technology__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@include breakpoint-down(1235px) {
+  .technology .container--wide {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .technology__img {
+    margin-right: 0;
+    margin-bottom: 38px;
+    max-width: 100%;
+    height: auto;
+  }
+}
