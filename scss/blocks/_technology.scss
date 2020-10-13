@@ -1,10 +1,8 @@
 .technology .container--wide {
   max-width: 1640px;
   display: flex;
-
   align-items: center;
-
-
+  padding-bottom: 80px;
 }
 
 .technology__img {
@@ -17,6 +15,12 @@
   background-repeat: no-repeat;
   background-position: left top 5%;
   background-image: url("../img/service-back.png");
+}
+
+@include retina-bg {
+  .technology__info {
+    background-image: url("../img/service-back@2x.png");
+  }
 }
 
 .technology__heading {
@@ -81,6 +85,20 @@
 
 .technology__item--3::before {
   background-image: url("../img/tech-3.png");
+}
+
+@include retina-bg {
+  .technology__item--1::before {
+    background-image: url("../img/tech-1@2x.png");
+  }
+
+  .technology__item--2::before {
+    background-image: url("../img/tech-2@2x.png");
+  }
+
+  .technology__item--3::before {
+    background-image: url("../img/tech-3@2x.png");
+  }
 }
 
 .tech__name {

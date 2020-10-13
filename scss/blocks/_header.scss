@@ -167,6 +167,12 @@
   border: none;
 }
 
+@include retina-bg {
+  .hamburger {
+    background-image: url("../img/icon-hamburger@2x.png");
+  }
+}
+
 @include breakpoint-down(1024px) {
 
   .site-header__top {
@@ -204,6 +210,12 @@
 
   .site-header--open .hamburger {
     background-image: url("../img/icon-exit.png");
+  }
+
+  @include retina-bg {
+    .site-header--open .hamburger {
+      background-image: url("../img/icon-exit@2x.png");
+    }
   }
 
   .hamburger {

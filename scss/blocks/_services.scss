@@ -6,6 +6,12 @@
   background-position: center top 15%;
 }
 
+@include retina-bg {
+  .services .container {
+    background-image: url("../img/service-back@2x.png");
+  }
+}
+
 
 .services__heading {
   position: relative;
@@ -91,6 +97,24 @@
 
 .service-4::before {
   background-image: url("../img/service-4.png");
+}
+
+@include retina-bg {
+  .service-1::before {
+    background-image: url("../img/service-1@2x.png");
+  }
+
+  .service-2::before {
+    background-image: url("../img/service-2@2x.png");
+  }
+
+  .service-3::before {
+    background-image: url("../img/service-3@2x.png");
+  }
+
+  .service-4::before {
+    background-image: url("../img/service-4@2x.png");
+  }
 }
 
 .services__slider-item+.services__slider-item {

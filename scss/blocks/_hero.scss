@@ -203,6 +203,12 @@
     background-position: left 60% center;
   }
 
+  @include retina-bg {
+    .slider {
+      background-image: url("../img/slider-girl-md@2x.jpg");
+    }
+  }
+
   .slider__heading {
     max-width: 450px;
   }
@@ -226,6 +232,12 @@
     background-position: left 55% center;
   }
 
+  @include retina-bg {
+    .slider {
+      background-image: url("../img/slider-girl-sm@2x.jpg");
+    }
+  }
+
   .slider__heading {
     max-width: 450px;
   }
@@ -238,4 +250,9 @@
     background-position: left 55% center;
   }
 
+  @include retina-bg {
+    .slider {
+      background-image: url("../img/slider-girl-sm@2x.jpg");
+    }
+  }
 }
