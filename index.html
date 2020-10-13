@@ -83,44 +83,44 @@
   <!--  ===== SITE-CONTENT =====  -->
   <main class="site-content">
     <!-- HERO-SECTION -->
-
-    <!-- HERO-BOTTOM -->
-    <div class="hero__bottom">
-      <div class="container">
-        <ul class="hero-bottom__list">
-          <li class="hero__treatment">
-            <h4 class="treatment__heading">Treatment</h4>
-            <p class="treatment__paragraph">
-              All types of dental treatment are carried out using the most modern technologies.
-            </p>
-          </li><!-- hero__treatment -->
-          <li class="hero__prosthetics">
-            <h4 class="prosthetics__heading">Prosthetics</h4>
-            <p class="prosthetics__paragraph">
-              We will help you find the most convenient and aesthetically attractive version of the prosthesis.
-            </p>
-          </li><!-- hero__prosthetics -->
-        </ul>
-        <form class="hero__form" action="https://echo.htmlacademy.ru/" method="POST">
-          <h4 class="hero-form__heading">Appointment</h4>
-          <input class="hero-form__input" type="text" name="user_name" placeholder="Name" aria-label="Enter your name"
-            required>
-          <input class="hero-form__input" type="tel" name="user_email" placeholder="Phone" aria-label="Enter your email"
-            required>
-          <button class="hero-form__button" type="submit">Appointment</button>
-          <div class="hero-form__bottom">
-            <span class="hero-form__description">
-              I give my consent to the storage and processing of personal data
-            </span>
-            <label class="hero-form__checkbox-label">
-              <input class="hero-form__checkbox visually-hidden" type="checkbox" aria-label="Accept or no"
-                name="user_choice">
-              <span class="control-checkbox"></span>
-            </label>
-          </div><!-- hero-form__bottom -->
-        </form>
-      </div><!-- container -->
-    </div><!-- hero__bottom -->
+    <section>
+      <!-- HERO-BOTTOM -->
+      <div class="hero__bottom">
+        <div class="container">
+          <ul class="hero-bottom__list">
+            <li class="hero__treatment">
+              <h4 class="treatment__heading">Treatment</h4>
+              <p class="treatment__paragraph">
+                All types of dental treatment are carried out using the most modern technologies.
+              </p>
+            </li><!-- hero__treatment -->
+            <li class="hero__prosthetics">
+              <h4 class="prosthetics__heading">Prosthetics</h4>
+              <p class="prosthetics__paragraph">
+                We will help you find the most convenient and aesthetically attractive version of the prosthesis.
+              </p>
+            </li><!-- hero__prosthetics -->
+          </ul>
+          <form class="hero__form" action="https://echo.htmlacademy.ru/" method="POST">
+            <h4 class="hero-form__heading">Appointment</h4>
+            <input class="hero-form__input" type="text" name="user_name" placeholder="Name" aria-label="Enter your name"
+              required>
+            <input class="hero-form__input" type="tel" name="user_email" placeholder="Phone"
+              aria-label="Enter your email" required>
+            <button class="hero-form__button" type="submit">Appointment</button>
+            <div class="hero-form__bottom">
+              <span class="hero-form__description">
+                I give my consent to the storage and processing of personal data
+              </span>
+              <label class="hero-form__checkbox-label">
+                <input class="hero-form__checkbox visually-hidden" type="checkbox" aria-label="Accept or no"
+                  name="user_choice">
+                <span class="control-checkbox"></span>
+              </label>
+            </div><!-- hero-form__bottom -->
+          </form>
+        </div><!-- container -->
+      </div><!-- hero__bottom -->
     </section>
     <!-- SERVICES -->
     <section class="services">
@@ -168,16 +168,11 @@
       <div class="container--wide">
         <!-- CAKE WITH CHERRY:) -->
         <picture class="technology__img">
-          <!-- max-width 600px webp -->
-          <source type="image/webp" media="(max-width:600px)"
-            srcset="img/technology-sm-sm.webp 1x, technology-sm-sm@2x.webp 2x">
-          <!-- max-width 600px jpg -->
-          <source media="(max-width:600px)" srcset="img/technology-sm-sm.jpg 1x, img/technology-sm-sm@2x.jpg 2x">
           <!-- max-width 1250px webp -->
           <source type="image/webp" media="(max-width:1250px)"
-            srcset="img/technology-sm.webp 1x, technology-sm@2x.webp 2x" width="441" height="662">
-          <!-- max-width 1250px -->
-          <source media="(max-width:1250px)" srcset="img/technology-sm.jpg 1x, img/technology-sm@2x.jpg 2x">
+            srcset="img/technology-sm-sm.webp 1x, technology-sm-sm@2x.webp 2x">
+          <!-- max-width 1250px jpg -->
+          <source media="(max-width:1250px)" srcset="img/technology-sm-sm.jpg 1x, img/technology-sm-sm@2x.jpg 2x">
           <!-- max-width 1440px webp -->
           <source type="image/webp" media="(max-width:1440px)"
             srcset="img/technology-md.webp 1x, technology-md@2x.webp 2x">

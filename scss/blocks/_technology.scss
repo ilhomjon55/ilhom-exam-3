@@ -1,8 +1,8 @@
 .technology .container--wide {
+  max-width: 1640px;
   display: flex;
 
   align-items: center;
-  max-width: 1640px;
 
 
 }
@@ -13,7 +13,7 @@
 }
 
 .technology__info {
-  max-width: 800px;
+  max-width: 700px;
   background-repeat: no-repeat;
   background-position: left top 5%;
   background-image: url("../img/service-back.png");
@@ -109,13 +109,6 @@
   }
 }
 
-@include breakpoint-up(1300px) {
-  .technology__img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 @include breakpoint-down(1235px) {
   .technology .container--wide {
     flex-direction: column;
@@ -126,6 +119,16 @@
     margin-right: 0;
     margin-bottom: 38px;
     max-width: 100%;
-    height: auto;
+    height: 30%;
+  }
+}
+
+@include breakpoint-down(600px) {
+  .technology__item+.technology__item {
+    margin-top: 17px;
+  }
+
+  .tech__description {
+    display: none;
   }
 }

@@ -3,6 +3,7 @@
 .hero__bottom .container {
   display: flex;
   padding: 0;
+  padding-top: 200px;
 }
 
 .hero-bottom__list {
@@ -120,10 +121,10 @@
 }
 
 .hero-form__input::placeholder {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
 }
 
 .hero-form__button {
@@ -207,6 +208,17 @@
   }
 }
 
+@include breakpoint-down(970px) {
+  .hero-bottom__list {
+    display: none;
+  }
+
+  .hero-form__button {
+    display: block;
+    min-width: 100%;
+  }
+}
+
 @include breakpoint-down(900px) {
   .slider {
     background-image: url("../img/slider-girl-sm.jpg");
@@ -225,6 +237,5 @@
     background-size: 500px auto;
     background-position: left 55% center;
   }
-
 
 }
