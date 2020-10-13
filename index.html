@@ -326,15 +326,21 @@
       </div><!-- container -->
     </section>
     <section class="contacts">
-      <div class="container">
+      <div class="container contacts__info">
         <h2 class="contacts__heading">Convenient location and working hours</h2>
         <p class="contacts__paragraph">
           Our clinic is located in the center of the Sverdlovsk district, at the address: Raboche-Krestyanskaya Street
           6. From the bus stop “Family” hypermarket to our dental clinic - 5 minutes on foot.
         </p>
+      </div>
+      <!-- container --
         <!-- MAP -->
-        <a class="contacts__map map__link" href="https://yandex.uz/maps/-/CCQ~MDcWwC"></a>
-        <!-- CONTACT-FORM -->
+      <a class="contacts__map map__link" href="https://yandex.uz/maps/-/CCQ~MDcWwC">
+        <img class="contacts__map-img" src="img/card.jpg" srcset="img/card.jpg 1x, img/card@2x.jpg 2x"
+          alt="Card, the location of clinic" width="1920" height="760">
+      </a>
+      <!-- CONTACT-FORM -->
+      <div class="container">
         <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="POST">
           <h4 class="contacts-form__heading">Appointment</h4>
           <input class="contacts-form__input" type="text" name="user_name" placeholder="Name"
@@ -354,7 +360,6 @@
           </div><!-- contacts-form__bottom -->
         </form>
       </div><!-- container -->
-
     </section>
   </main>
   <script src="js/main.js"> </script>
