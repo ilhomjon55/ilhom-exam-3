@@ -129,10 +129,15 @@
   background-image: url("../img/icon-arrow.svg");
 }
 
-@include breakpoint-down(650px) {
+@include breakpoint-down(970px) {
   .team .container {
     max-width: 1180px;
     padding: 0 20px;
+  }
+
+  .team__slider-list {
+    overflow: auto;
+    padding-bottom: 30px;
   }
 
   .team__slider-item {
@@ -145,5 +150,11 @@
 
   .team__slider-controller {
     display: none;
+  }
+}
+
+@include breakpoint-down(650px) {
+  .team__slider-wrapper {
+    padding: 0 20px;
   }
 }

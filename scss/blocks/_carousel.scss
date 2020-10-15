@@ -101,15 +101,21 @@
   background-image: url("../img/icon-next.svg");
 }
 
+@include breakpoint-down(1090px) {
+  .carousel-controller__inner {
+    bottom: 7%;
+  }
+}
+
 @include breakpoint-down(1024px) {
   body {
     padding-top: 68px;
   }
 
+
   .carousel__inner {
     transform: translateY(-70%);
   }
-
 
 }
 
