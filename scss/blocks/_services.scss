@@ -200,24 +200,26 @@
   background-image: url("../img/icon-arrow.svg");
 }
 
-@include breakpoint-down(550px) {
+@include breakpoint-down(970px) {
+
   .services__slider-wrapper {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
-  .services__slider-controller:nth-of-type(1) {
-    left: 90%;
+  .services__slider-list {
+    overflow: auto;
+    padding-bottom: 50px;
   }
 
-
-  .services__slider-controller:nth-of-type(2) {
-    right: 90%;
+  .services__slider-controller {
+    display: none;
   }
-
 }
+
+
 
 @include breakpoint-down(370px) {
   .service {
-    min-width: 165px;
+    min-width: 180px;
   }
 }

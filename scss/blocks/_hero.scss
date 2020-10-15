@@ -3,7 +3,6 @@
 .hero__bottom .container {
   display: flex;
   padding: 0;
-  padding-top: 200px;
 }
 
 .hero-bottom__list {
@@ -83,6 +82,7 @@
 }
 
 .hero__form {
+  z-index: 1;
   flex-grow: 1;
   margin-top: -50px;
   padding: 20px 25px 15px 25px;
@@ -204,23 +204,7 @@
   opacity: 0.7;
 }
 
-@include breakpoint-down(1024px) {
-  .slider {
-    background-image: url("../img/slider-girl-md.jpg");
-    background-size: cover;
-    background-position: left 60% center;
-  }
 
-  @include retina-bg {
-    .slider {
-      background-image: url("../img/slider-girl-md@2x.jpg");
-    }
-  }
-
-  .slider__heading {
-    max-width: 450px;
-  }
-}
 
 @include breakpoint-down(970px) {
   .hero-bottom__list {
@@ -231,36 +215,9 @@
     display: block;
     min-width: 100%;
   }
-}
 
-@include breakpoint-down(900px) {
-  .slider {
-    background-image: url("../img/slider-girl-sm.jpg");
-    background-size: cover;
-    background-position: left 55% center;
-  }
-
-  @include retina-bg {
-    .slider {
-      background-image: url("../img/slider-girl-sm@2x.jpg");
-    }
-  }
-
-  .slider__heading {
-    max-width: 450px;
-  }
-}
-
-@include breakpoint-down(500px) {
-  .slider {
-    background-image: url("../img/slider-girl-sm.jpg");
-    background-size: 500px auto;
-    background-position: left 55% center;
-  }
-
-  @include retina-bg {
-    .slider {
-      background-image: url("../img/slider-girl-sm@2x.jpg");
-    }
+  .hero__form {
+    margin-top: 0;
+    padding-top: 25px;
   }
 }

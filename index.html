@@ -84,22 +84,34 @@
   </header>
   <!--  ===== SITE-CONTENT =====  -->
   <main class="site-content">
-    <!-- HERO-SECTION -->
-    <section>
-      <!-- <div class="hero__carousel">
-        <button class="hero__carousel-button"></button>
-        <button class="hero__carousel-button"></button>
+    <!-- CAROUSEL -->
+    <section class="hero__carousel">
+      <div class="hero__carousel">
         <ul class="carousel__list">
           <li class="carousel__item">
+            <picture class="hero__carousel-img">
+              <!-- max-width 600px -->
+              <source media="(max-width:600px)" srcset="img/slider-girl-sm.jpg 1x, img/slider-girl-sm@2x.jpg 2x">
+              <!-- max-width 900px -->
+              <source media="(max-width:900px)" srcset="img/slider-girl-md.jpg 1x, img/slider-girl-md@2x.jpg 2x">
+              <img src="img/slider-girl.jpg" alt="Opoqi" width="1920" height="900">
+            </picture>
             <div class="container">
-              <p class="carousel__description">Modern technology and expert-class dentists</p>
-              <h3 class="carousel__heading">get a brilliant smile for every day</h3>
-              <a class="carousel__get-button" href="#">get</a>
-            </div>
-
+              <div class="carousel__inner">
+                <p class="carousel__description">Modern technology and expert-class dentists</p>
+                <h3 class="carousel__heading">get a brilliant smile for every day</h3>
+                <a class="carousel__get-button" href="#">get</a>
+              </div><!-- carousel__inner -->
+            </div><!-- container -->
           </li>
         </ul>
-      </div> -->
+        <div class="carousel-controller__container container">
+          <div class="carousel-controller__inner">
+            <button class="hero__carousel-button"></button>
+            <button class="hero__carousel-button"></button>
+          </div><!-- carousel-controller__inner -->
+        </div><!-- carousel-controller__container -->
+      </div>
       <!-- HERO-BOTTOM -->
       <div class="hero__bottom">
         <div class="container">
@@ -361,7 +373,7 @@
         </p>
       </div>
       <!-- container --
-        <!-- MAP -->
+                        <!-- MAP -->
       <a class="contacts__map map__link" href="https://yandex.uz/maps/-/CCQ~MDcWwC">
         <img class="contacts__map-img" src="img/card.jpg" srcset="img/card.jpg 1x, img/card@2x.jpg 2x"
           alt="Card, the location of clinic" width="1920" height="760">

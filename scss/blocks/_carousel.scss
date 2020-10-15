@@ -1,0 +1,152 @@
+.hero__carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel__list {
+  @include reset-list;
+}
+
+.hero__carousel-img {
+  display: block;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+
+.carousel__inner {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 543px;
+}
+
+.carousel__description {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-color--darker;
+}
+
+.carousel__heading {
+  margin: 0;
+  margin-bottom: 27px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: $text-color--darker;
+}
+
+.carousel__get-button {
+  display: inline-block;
+  min-width: 265px;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background: $main-blue;
+  border-radius: 5px;
+}
+
+.carousel__get-button:hover {
+  opacity: 0.8;
+}
+
+.carousel__get-button:active {
+  opacity: 0.6;
+}
+
+.carousel-controller__container {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-controller__inner {
+  position: absolute;
+  bottom: 10%;
+}
+
+.hero__carousel-button {
+  display: inline-block;
+  background-color: #FFD600;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero__carousel-button:hover {
+  opacity: 0.8;
+}
+
+.hero__carousel-button:active {
+  opacity: 0.6;
+}
+
+.hero__carousel-button:nth-of-type(1) {
+  width: 42px;
+  height: 70px;
+  background-image: url("../img/icon-previous.svg");
+}
+
+.hero__carousel-button:nth-of-type(2) {
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/icon-next.svg");
+}
+
+@include breakpoint-down(1024px) {
+  body {
+    padding-top: 68px;
+  }
+
+  .carousel__inner {
+    transform: translateY(-70%);
+  }
+
+
+}
+
+@include breakpoint-down(970px) {
+  .carousel__inner {
+    position: relative;
+    max-width: 100%;
+    display: block;
+    transform: none;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .carousel__heading {
+    margin: 0;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .carousel__get-button {
+    display: none;
+  }
+
+  .carousel-controller__inner {
+    bottom: 35%;
+  }
+
+}
+
+@include breakpoint-down(600px) {
+  .carousel-controller__inner {
+    bottom: 25%;
+  }
+}
+
+@include breakpoint-down(450px) {
+  .carousel-controller__inner {
+    bottom: 35%;
+  }
+}
