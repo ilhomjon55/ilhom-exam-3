@@ -1,0 +1,133 @@
+.reviews .container {
+  padding: 35px 20px;
+  background-repeat: no-repeat;
+  background-position: center top 5%;
+  background-image: url("../img/service-back.png");
+}
+
+
+
+@include retina-bg {
+  .reviews .container {
+    background-image: url("../img/service-back@2x.png");
+  }
+}
+
+.reviews__heading {
+  position: relative;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-top: 16px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: $text-color--darker;
+}
+
+.reviews__heading::before {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: #FFD600;
+  content: "";
+}
+
+.reviews__paragraph {
+  max-width: 483px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: $text-color--lighter;
+}
+
+.reviews__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.reviews__item {
+  max-width: 354px;
+}
+
+.reviews__item+.reviews__item {
+  margin-left: 35px;
+}
+
+.reviewer__img {
+  display: block;
+  margin-bottom: 31px;
+}
+
+.reviewer__name {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #222222;
+}
+
+.review__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: $text-color--lighter;
+}
+
+.give-feedback {
+  display: block;
+  max-width: 265px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-color--lighter;
+  background-color: #fff;
+  border: 1px solid $main-blue;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.give-feedback:hover {
+  background-color: $main-blue;
+  color: #fff;
+}
+
+.give-feedback:active {
+  opacity: 0.6;
+}
+
+@include breakpoint-down(700px) {
+  .reviews__list {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .reviews__item {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .reviews__item+.reviews__item {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .reviewer__img {
+    width: 100%;
+  }
+}
