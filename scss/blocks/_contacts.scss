@@ -1,0 +1,240 @@
+.contacts {
+  padding-top: 35px;
+}
+
+.contacts__info {
+  background-repeat: no-repeat;
+  background-position: center top 5%;
+  background-image: url("../img/service-back.png");
+}
+
+@include retina-bg {
+  .contacts__info {
+    background-image: url("../img/service-back@2x.png");
+  }
+}
+
+.contacts__heading {
+  position: relative;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 13px;
+  padding-top: 16px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: $text-color--darker;
+}
+
+.contacts__heading::before {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: #FFD600;
+  content: "";
+}
+
+.contacts__paragraph {
+  max-width: 880px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #4D4D4D;
+}
+
+.map__link {
+  display: block;
+  padding: 450px;
+  background-image: url("../img/card.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contacts__form-container {
+  position: relative;
+}
+
+.contacts__form {
+  position: absolute;
+  bottom: 250px;
+  left: 20px;
+  width: 100%;
+  max-width: 550px;
+  z-index: 1;
+  flex-grow: 1;
+  margin-top: -50px;
+  padding: 20px 25px 15px 25px;
+  background-color: $main-blue;
+  border-radius: 5px;
+}
+
+
+.contacts-form__heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.contacts-form__input {
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+  padding: 20px 14px;
+  background-color: $main-blue;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.contacts-form__input:not(:focus) {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.contacts-form__input:not(:placeholder-shown):focus {
+  background-color: #fff;
+  color: #222222;
+}
+
+.contacts-form__input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.contacts-form__button {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 230px;
+  display: block;
+  margin-bottom: 15px;
+  padding: 17px;
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-color--darker;
+  background-color: $yellow--darker;
+  border: none;
+  border-radius: 5px;
+}
+
+.contacts-form__button::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  content: "";
+}
+
+
+.contacts-form__button:hover::before {
+  opacity: 0.3;
+}
+
+.contacts-form__button:active::before {
+  opacity: 0.2;
+}
+
+.contacts-form__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts-form__description {
+  width: 100%;
+  max-width: 256px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.contacts-form__checkbox:checked+.control-checkbox {
+  background-image: url("../img/icon-acceptance.svg");
+}
+
+.control-checkbox {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+.control-checkbox:hover {
+  opacity: 0.7;
+}
+
+
+
+@include breakpoint-down(1024px) {
+  .map__link {
+    background-position: right top;
+  }
+}
+
+
+@include breakpoint-down(970px) {
+
+  .contacts__form {
+    margin-top: 0;
+    padding-top: 25px;
+  }
+
+  .contacts-form__button {
+    display: block;
+    min-width: 100%;
+  }
+}
+
+@include breakpoint-down(700px) {
+  .map__link {
+    order: 2;
+    padding: 150px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__info {
+    order: 1;
+  }
+
+  .contacts__form-container {
+    order: -1;
+    padding: 0;
+    padding-bottom: 70px;
+    margin: 0;
+  }
+
+  .contacts__form {
+    width: 100%;
+    position: static;
+    margin: 0 auto;
+  }
+}

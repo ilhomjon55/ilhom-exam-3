@@ -173,8 +173,6 @@
   justify-content: space-between;
 }
 
-
-
 .hero-form__description {
   width: 100%;
   max-width: 256px;
@@ -211,13 +209,13 @@
     display: none;
   }
 
-  .hero-form__button {
-    display: block;
-    min-width: 100%;
-  }
-
   .hero__form {
     margin-top: 0;
     padding-top: 25px;
+  }
+
+  .hero-form__button {
+    display: block;
+    min-width: 100%;
   }
 }
