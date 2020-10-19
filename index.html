@@ -318,10 +318,19 @@
             treatment, and professionals should deal with it.
             - For regular customers discounts from 5 to 20%.
           </p>
-          <button class="quality__button" id="#learn_more">Learn more</button>
+          <div class="quality__info-bottom">
+            <img class="sign-img" src="img/sign.png" srcset="img/sign.png 1x, img/sign@2x.png 2x" alt="Sign">
+            <button class="quality__button" id="#learn_more">Learn more</button>
+          </div><!-- quality__info-bottom -->
         </div><!-- quality__info -->
-        <img class="quality__img" src="img/quality.jpg" srcset="img/quality.jpg 1x, img/quality@2x.jpg 2x "
-          alt="Doctor with little girl" width="750" height="6000">
+        <picture class="quality__img">
+          <!-- max-width 600px -->
+          <source media="(max-width:750px)" srcset="img/quality-sm.jpg 1x, img/quality-sm@2x.jpg 2x">
+          <!-- max-width 900px -->
+          <source media="(max-width:900px)" srcset="img/quality-md.jpg 1x, img/quality-md@2x.jpg 2x">
+          <img src="img/quality.jpg" srcset="img/quality.jpg 1x, img/quality@2x.jpg 2x " alt="Doctor with little girl"
+            width="750" height="6000">
+
       </div><!-- container--wide -->
     </section>
     <!-- SECTION REVIEWS -->
